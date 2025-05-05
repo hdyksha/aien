@@ -19,15 +19,13 @@
 ### 2.1 プロジェクト設定（週1-2）
 
 #### タスク
-- [ ] プロジェクト構造の設定
-- [ ] 開発環境の構築（Biome, Vitest等）
-- [ ] CIパイプラインの設定
+- [x] プロジェクト構造の設定
+- [x] 開発環境の構築（Biome, Vitest等）
 - [ ] 基本的なUIフレームワークの選定と導入
 
 #### 成果物
-- [ ] 動作する開発環境
-- [ ] 基本的なプロジェクト構造
-- [ ] CI/CDパイプライン
+- [x] 動作する開発環境
+- [x] 基本的なプロジェクト構造
 
 ### 2.2 チャット機能（週3-5）
 
@@ -103,23 +101,22 @@
 ## 3. 技術スタック詳細
 
 ### フロントエンド
-- [ ] React 18
-- [ ] TypeScript 5.x
-- [ ] Tailwind CSS（UIスタイリング）
-- [ ] React Query（データフェッチング）
-- [ ] Zustand（状態管理）
+- [x] React 18
+- [x] TypeScript 5.x
+- [x] Tailwind CSS（UIスタイリング）
+- [x] React Query（データフェッチング）
+- [x] Zustand（状態管理）
 
 ### バックエンド
-- [ ] Node.js 18.x
-- [ ] Express
-- [ ] TypeScript 5.x
-- [ ] MongoDB（データ永続化）
-- [ ] WebSocket（リアルタイム通信）
+- [x] Node.js 18.x
+- [x] Express
+- [x] TypeScript 5.x
+- [x] MongoDB（データ永続化）
+- [x] WebSocket（リアルタイム通信）
 
 ### 開発ツール
-- [ ] Biome（リンティング/フォーマッティング）
-- [ ] Vitest（テスト）
-- [ ] GitHub Actions（CI/CD）
+- [x] Biome（リンティング/フォーマッティング）
+- [x] Vitest（テスト）
 - [ ] Docker（開発環境）
 
 ## 4. API設計概要
