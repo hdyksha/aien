@@ -46,21 +46,45 @@ npm run dev
 
 ```
 aien/
-├── client/             # フロントエンドコード
+├── client/                # フロントエンドコード
+│   ├── public/            # 静的ファイル
 │   ├── src/
-│   │   ├── components/ # UIコンポーネント
-│   │   ├── hooks/      # カスタムフック
-│   │   ├── pages/      # ページコンポーネント
-│   │   └── services/   # APIサービス
+│   │   ├── assets/        # 画像、フォントなど
+│   │   ├── components/    # UIコンポーネント
+│   │   │   ├── common/    # 汎用コンポーネント
+│   │   │   ├── chat/      # チャット関連コンポーネント
+│   │   │   └── vocabulary/# 単語学習関連コンポーネント
+│   │   ├── hooks/         # カスタムフック
+│   │   ├── pages/         # ページコンポーネント
+│   │   ├── services/      # APIサービス
+│   │   ├── store/         # 状態管理
+│   │   ├── types/         # 型定義
+│   │   └── utils/         # ユーティリティ関数
+│   ├── tests/             # テストファイル
 │   └── ...
-├── server/             # バックエンドコード
+├── server/                # バックエンドコード
 │   ├── src/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── services/
+│   │   ├── controllers/   # リクエストハンドラ
+│   │   ├── models/        # データモデル
+│   │   ├── routes/        # ルート定義
+│   │   ├── services/      # ビジネスロジック
+│   │   │   ├── ai/        # AI統合サービス
+│   │   │   ├── chat/      # チャットサービス
+│   │   │   └── vocabulary/# 単語学習サービス
+│   │   ├── types/         # 型定義
+│   │   └── utils/         # ユーティリティ関数
+│   ├── tests/             # テストファイル
 │   └── ...
-├── specs.md            # 要件定義書
+├── docs/                  # プロジェクトドキュメント
+│   ├── plans/             # 開発計画書
+│   │   └── phase1-implementation-plan.md  # フェーズ1実装計画
+│   ├── architecture.md    # アーキテクチャ設計
+│   └── api-spec.md        # API仕様書
+├── .github/               # GitHub関連設定
+│   └── workflows/         # GitHub Actions
+├── scripts/               # 開発・デプロイスクリプト
+├── specs.md               # 要件定義書
+├── AmazonQ.md             # 開発ルール
 └── ...
 ```
 
