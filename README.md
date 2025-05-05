@@ -28,18 +28,33 @@ AIENは、AIを活用した英語学習をサポートするアプリケーシ�
 - npm 9.x以上
 - Ollama（ローカル開発用）
 
-### インストール
+### インストールと実行
 
 ```bash
 # リポジトリのクローン
 git clone https://github.com/yourusername/aien.git
 cd aien
 
-# 依存関係のインストール
-npm install
+# 依存関係のインストールと環境設定（一括実行）
+npm run setup
 
-# 開発サーバーの起動
+# 開発サーバーの起動（クライアントとサーバーを同時に起動）
 npm run dev
+```
+
+これにより、サーバーは http://localhost:3000 で、クライアントは http://localhost:3001 で起動します。
+
+### その他のコマンド
+
+```bash
+# テストの実行
+npm test
+
+# リンターの実行
+npm run lint
+
+# ビルド
+npm run build
 ```
 
 ## プロジェクト構造
