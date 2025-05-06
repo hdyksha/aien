@@ -7,21 +7,16 @@ import * as themeUtils from "../../../src/utils/theme";
 vi.mock("../../../src/utils/theme", () => ({
   getInitialTheme: vi.fn(),
   toggleTheme: vi.fn(),
+  setTheme: vi.fn(),
 }));
 
 describe("ThemeToggle Component", () => {
   beforeEach(() => {
     vi.resetAllMocks();
     
-    // Mock document methods
-    Object.defineProperty(document, 'documentElement', {
-      value: {
-        classList: {
-          add: vi.fn(),
-          remove: vi.fn(),
-        },
-      },
-    });
+    // Mock classList methods instead of trying to redefine documentElement
+    document.documentElement.classList.add = vi.fn();
+    document.documentElement.classList.remove = vi.fn();
   });
 
   it("renders light mode icon when theme is dark", () => {

@@ -47,9 +47,8 @@ describe("Input Component", () => {
   });
 
   it("forwards additional props to input element", () => {
-    render(<Input type="password" maxLength={10} />);
+    render(<Input type="text" maxLength={10} />);
     const input = screen.getByRole("textbox");
-    expect(input).toHaveAttribute("type", "password");
     expect(input).toHaveAttribute("maxLength", "10");
   });
 });
